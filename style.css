@@ -14,13 +14,15 @@
     --form-width: 65vw;
     --form-head-foot-height: 32.5vh;
     --form-body-height: 35vh;
+    --form-margin-left: 40px;
+    --font: 'Times New Roman', Times, serif
 }
 
 body{
     margin: 0;
     padding: 0;
     display: flex;
-    font-family: 'Times New Roman', Times, serif
+    font-family: var(--font);
 }
 
 .logo{
@@ -54,9 +56,10 @@ header{
    
 }
 header p{
+    font-weight: 500px;
     position: absolute; 
     bottom: 10px; 
-    left: 50px;
+    left: var(--form-margin-left);
     font-size: 1.5rem;
 }
 
@@ -82,4 +85,17 @@ li{
 
 li > label {
     display: block;
+}
+
+button{
+    margin-left: var(--form-margin-left);
+
+    background-color: #596D48;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 600;
 }

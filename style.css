@@ -18,7 +18,7 @@
     --font: 'Times New Roman', Times, serif;
     --secondary-background-color: rgb(241, 239, 239);
     --main-background-color: rgb(255, 255, 255);
-    --form-margin-bottom: 10px;
+    --form-margin-bottom: 32px;
 }
 
 body{
@@ -77,19 +77,15 @@ main{
    
 }
 
-h2{
-   margin-left: 40px; 
-   margin-bottom: var(--form-margin-bottom);
-}
-
 main ul{
     display: flex;
     list-style: none;
+    margin-bottom: var(--form-margin-bottom);
 }
 
 li{
     margin-right: 30px;
-    margin-bottom: var(--form-margin-bottom);
+    
 }
 
 li > label {
@@ -112,6 +108,11 @@ input:focus{
     border: 1px solid rgb(236, 12, 23);
 }
 
+a{
+    text-decoration: none;
+    color: #596D48;
+}
+
 button{
     margin-left: var(--form-margin-left);
     background-color: #596D48;
@@ -123,4 +124,9 @@ button{
     font-family: var(--font);
     font-size: 16px;
     font-weight: 600;
+}
+
+
+footer > .login{
+    margin: 40px;
 }

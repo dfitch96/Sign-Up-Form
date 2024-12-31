@@ -28,13 +28,43 @@ body{
     font-family: var(--font);
 }
 
-.logo{
-    font-family: 'norsebold';
-}
 
-img{
+.card-container,
+.card-image{
     height: var(--image-height);
     width: var(--image-width);
+}
+
+.card-container{
+    position: relative;
+    
+}
+
+.card-image{
+    position: absolute;
+    z-index: -1;
+}
+
+.logo{
+    height: 5rem;
+    width: auto;
+}
+
+.card-body{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--image-width);
+    height: 100px;
+    background: black;
+    opacity: .6;
+    font-family: 'norsebold';
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    top: 15rem;
+    gap: 1.5rem;
 }
 
 .wrapper{
